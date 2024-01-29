@@ -1,0 +1,125 @@
+a.link1, a.link2{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a.link1{
+    color: #fff;
+    background: #9ab8d2;
+    border: 1px solid #5380d2;
+
+    /*Firefox*/
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+    -moz-transition-delay: 0.2;
+
+    /*chrome / safari*/
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 0.2;
+
+    /*Opera*/
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease;
+    -o-transition-delay: 0.2;
+
+    /*Defaul*/
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.2;
+}
+
+
+a.link1:hover{
+    background-color: #5380d2;
+    color: #a8bfd2;
+}
+
+
+a.link2{
+    color: #9ca3a3;
+    background: #d4dbdb;
+    border: 2px solid #b3baba;
+
+    /*Firefox*/
+    -moz-transition-property: all;
+    -moz-transition-duration: 300ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-delay: 20ms;
+    
+    
+    /*chrome / safari*/
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 300ms;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 20ms;
+    
+    /*Opera*/
+    -o-transition-property: all;
+    -o-transition-duration: 300ms;
+    -o-transition-timing-function: ease-out;
+    -o-transition-delay: 20ms;
+    
+    /*Defaul*/
+    transition-property: all;
+    transition-duration: 300s;
+    transition-timing-function: ease-out;
+    transition-delay: 2ms;
+}
+
+a.link2:hover{
+    background-color: #404f4f;
+    color: #333;
+    border: 2px solid #405c5c;
+    padding: 10px 30px;
+}
+p.zoom{
+    font-size: 12px;
+    width: 300px;
+
+    /*Firefox*/
+    -moz-transition: font-size 300ms linear 0s;
+    /*chrome / safari*/
+    -webkit-transition: font-size 300ms linear 0s;
+    /*Opera*/
+    -o-transition: font-size 300ms linear 0s;
+    /*Default*/
+    transition: font-size 300ms linear 0s;
+}
+p.zoom:hover{
+    font-size: 16px;
+}
+
+div.nino{
+    box-shadow: 0 0 15px #000;
+    width: 210px;
+    height: 300px;
+    padding: 0;
+    background: url("nino-yoyo.png") no-repeat top left;
+}
+
+div.yoyo{
+    padding: 0;
+    background: url(yoyo.png) no-repeat bottom right;
+    width: 65px;
+    height: 75px;
+    position: relative;
+    right: 100%;
+    left: 145px;
+    top: 100px;
+
+    /*Firefox*/
+    -moz-transition: height 1s linear 0.2s;
+    /*chrome / safari*/
+    -webkit-transition: height 1s linear 0.2s;
+    /*Opera*/
+    -o-transition: height 1s linear 0.2s;
+    /*Default*/
+    transition: height 1s linear 0.2s;;
+}
+div.nino:hover div.yoyo{
+    height: 200px;
+}
